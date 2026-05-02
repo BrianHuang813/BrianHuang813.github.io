@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Xiu Huang&#39;s Website</title>
+    <!-- Pixel Font: VT323 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- Typed.js for typing effect -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Kai Xiu Huang</div>
+                <ul class="nav-links">
+                    <li><a href="/#home">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/inventory">Inventory</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/changelog">Changelog</a></li>
+                    <li><a href="/archives">Archive</a></li>
+                    <li><a href="/guestbook">Guestbook</a></li>
+
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="article-container">
+    
+        <div class="article-cover">
+            <img src="https://res.cloudinary.com/dpe4rzzp8/image/upload/v1765386005/ChatGPT_Image_2025%E5%B9%B412%E6%9C%8811%E6%97%A5_%E4%B8%8A%E5%8D%8812_59_04_eaf9pc.png" alt="cover image" style="width:100%;max-height:400px;object-fit:cover;">
+        </div>
+    
+    <div class="article-header">
+        <h1 class="article-title">Project：BlueLink Blue Bond RWA Tokenisation</h1>
+        <div class="article-meta">
+            <span class="article-date">2025-10-25</span>
+            
+                <span class="article-categories">
+                    <a class="article-category-link" href="/categories/project/">project</a>
+                </span>
+            
+        </div>
+    </div>
+
+    <div class="article-content">
+        <h2 id="Project-Overview"><a href="#Project-Overview" class="headerlink" title="Project Overview"></a>Project Overview</h2><p><strong>BlueLink</strong> is a blue bond fundraising platform built on the Sui blockchain, dedicated to providing transparent and trustworthy funding solutions for ocean conservation, sustainable fisheries, and other blue economy initiatives.</p>
+<h3 id="Core-Features"><a href="#Core-Features" class="headerlink" title="Core Features"></a>Core Features</h3><p>Blue Bonds are specialized financial instruments designed to raise capital for ocean conservation and sustainable marine economy projects. On BlueLink, investors can purchase bond tokens to support ocean-related projects and receive principal and interest returns at maturity; issuers can conveniently issue bonds for project fundraising and manage funds through the platform.</p>
+<p><strong>Investor Features:</strong></p>
+<ul>
+<li>Sign in using Sui wallet signature verification for a password-free experience</li>
+<li>Browse all listed blue bonds with complete information including issuers, interest rates, and maturity dates</li>
+<li>Purchase bond tokens to support ocean conservation projects and receive NFT bond certificates</li>
+<li>Track personal bond holdings and earnings status</li>
+<li>Redeem principal and interest on maturity dates</li>
+<li>Multi-device management and login device control</li>
+</ul>
+<p><strong>Issuer Features:</strong></p>
+<ul>
+<li>Issue blue bonds to raise funds for ocean projects</li>
+<li>Manage collected funds and redemption pools</li>
+<li>Monitor fundraising progress and investor information in real-time</li>
+<li>Pause&#x2F;resume bond sales and flexibly control project status</li>
+</ul>
+<h3 id="Technical-Architecture"><a href="#Technical-Architecture" class="headerlink" title="Technical Architecture"></a>Technical Architecture</h3><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Components</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Blockchain Layer</strong></td>
+<td>Sui Move Smart Contracts, Event Listening, RPC API</td>
+</tr>
+<tr>
+<td><strong>Backend</strong></td>
+<td>Go 1.24 + Gin Framework, PostgreSQL Database</td>
+</tr>
+<tr>
+<td><strong>Authentication</strong></td>
+<td>Wallet Signature Verification + Memory Session Management</td>
+</tr>
+<tr>
+<td><strong>Frontend (Planned)</strong></td>
+<td>React + TypeScript + Vite</td>
+</tr>
+</tbody></table>
+<p>The system implements real-time data synchronization through blockchain event listening, supporting core events such as BondProjectCreated, BondTokensPurchased, and BondTokenRedeemed to ensure the platform remains synchronized with on-chain state.</p>
+<hr>
+<h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>I developed BlueLink out of a deep understanding of the following challenges:</p>
+<p><strong>Current Challenges:</strong></p>
+<ol>
+<li><strong>Insufficient Fund Transparency</strong> - Traditional ocean conservation fundraising lacks transparent fund tracking mechanisms</li>
+<li><strong>High Trust Costs</strong> - Investors struggle to verify actual fund usage</li>
+<li><strong>High Barriers to Entry</strong> - Lack of platformized blue bond issuance tools</li>
+<li><strong>Cross-Border Collaboration Difficulties</strong> - International investors find it hard to participate in ocean project financing</li>
+</ol>
+<p><strong>Blockchain Solutions:</strong></p>
+<p>Sui blockchain’s high performance and low-cost characteristics enable us to build:</p>
+<ul>
+<li><strong>Fully On-Chain</strong> - All transaction records are permanently stored and immutable</li>
+<li><strong>Transparent and Traceable</strong> - Fund flows are completely transparent, allowing investors to verify in real-time</li>
+<li><strong>Efficient and Convenient</strong> - Sui’s high throughput delivers second-level confirmations and low transaction fees</li>
+<li><strong>No Intermediaries Needed</strong> - Smart contracts execute automatically, reducing trust costs</li>
+</ul>
+<p>Through BlueLink, we aim to connect global investors with ocean conservation projects and promote sustainable development of the blue economy.</p>
+<hr>
+<h2 id="Unique-Features"><a href="#Unique-Features" class="headerlink" title="Unique Features"></a>Unique Features</h2><h3 id="1-Fully-On-Chain-Bond-Lifecycle-Management"><a href="#1-Fully-On-Chain-Bond-Lifecycle-Management" class="headerlink" title="1. Fully On-Chain Bond Lifecycle Management"></a>1. Fully On-Chain Bond Lifecycle Management</h3><ul>
+<li><strong>Automated Execution</strong> - Smart contracts ensure redemption, interest distribution, and other processes execute automatically without manual intervention</li>
+<li><strong>Immutable Transaction Records</strong> - All investment, redemption, and fund management operations are permanently stored on the blockchain</li>
+<li><strong>Real-Time Synchronization</strong> - The system listens to on-chain events every 15 seconds, automatically updating platform data with zero latency</li>
+</ul>
+<h3 id="2-Passwordless-Authentication-Experience"><a href="#2-Passwordless-Authentication-Experience" class="headerlink" title="2. Passwordless Authentication Experience"></a>2. Passwordless Authentication Experience</h3><ul>
+<li><strong>Native Sui Signature Verification</strong> - Users sign in using Sui wallet signatures without setting or managing complex passwords</li>
+<li><strong>Replay Attack Prevention</strong> - Employs Nonce mechanism to ensure login security</li>
+<li><strong>Multi-Device Management</strong> - View all login devices and revoke suspicious connections anytime (maximum 3 concurrent logins)</li>
+<li><strong>HttpOnly Cookie</strong> - Sessions use HttpOnly mechanism with 24-hour validity period</li>
+</ul>
+<h3 id="3-Purpose-Built-for-Ocean-Conservation"><a href="#3-Purpose-Built-for-Ocean-Conservation" class="headerlink" title="3. Purpose-Built for Ocean Conservation"></a>3. Purpose-Built for Ocean Conservation</h3><ul>
+<li><strong>Blue Economy Specialized Design</strong> - Platform specifically designed for ocean-related projects with support for specific fundraising parameters and progress tracking</li>
+<li><strong>Issuer-Friendly</strong> - Project teams can easily issue bonds, manage fundraising, and monitor investor status</li>
+<li><strong>Investor Transparency</strong> - Complete project information display, interest rates, and maturity dates to support risk assessment</li>
+</ul>
+<h3 id="4-Enterprise-Grade-Security-and-Reliability"><a href="#4-Enterprise-Grade-Security-and-Reliability" class="headerlink" title="4. Enterprise-Grade Security and Reliability"></a>4. Enterprise-Grade Security and Reliability</h3><ul>
+<li><strong>Rate Limiting Protection</strong> - API rate limiting prevents brute force attacks and DDoS</li>
+<li><strong>CORS Control</strong> - Strict cross-origin request configuration to protect user safety</li>
+<li><strong>Audit Logs</strong> - Request ID tracking and comprehensive audit records for easy fault tracing</li>
+<li><strong>Soft Delete Mechanism</strong> - Preserves data history for traceability and compliance</li>
+</ul>
+<hr>
+<h2 id="Future-Directions-and-Ambition"><a href="#Future-Directions-and-Ambition" class="headerlink" title="Future Directions and Ambition"></a>Future Directions and Ambition</h2><h3 id="Short-Term-Goals-3-6-months"><a href="#Short-Term-Goals-3-6-months" class="headerlink" title="Short-Term Goals (3-6 months)"></a>Short-Term Goals (3-6 months)</h3><ol>
+<li><strong>Frontend Application Launch</strong> - Complete React + TypeScript frontend development to provide a complete user interface</li>
+<li><strong>Mainnet Deployment</strong> - Migrate the platform to Sui mainnet to support real fund flows</li>
+<li><strong>Ecosystem Expansion</strong> - Support more blue economy project types (aquaculture, ocean cleanup, coral protection, etc.)</li>
+</ol>
+<h3 id="Medium-Term-Goals-6-12-months"><a href="#Medium-Term-Goals-6-12-months" class="headerlink" title="Medium-Term Goals (6-12 months)"></a>Medium-Term Goals (6-12 months)</h3><ol>
+<li><strong>Cross-Chain Integration</strong> - Support blue bonds across multiple public chains to expand investor base</li>
+<li><strong>DAO Governance</strong> - Establish decentralized governance model to enable community participation in platform decisions</li>
+<li><strong>Analytics Dashboard</strong> - Provide issuers with detailed analysis reports and investor insights</li>
+</ol>
+<h3 id="Long-Term-Vision"><a href="#Long-Term-Vision" class="headerlink" title="Long-Term Vision"></a>Long-Term Vision</h3><p><strong>Advancing United Nations Sustainable Development Goal 14</strong></p>
+<p>BlueLink aspires to become the foundational infrastructure for global blue economy financing. Our ultimate objectives are:</p>
+<ul>
+<li><strong>Global Investor Connection</strong> - Connect investors worldwide with ocean conservation projects</li>
+<li><strong>Enhanced Capital Flow</strong> - Dramatically increase accessibility of financing for ocean-related projects</li>
+<li><strong>Accelerated Ecosystem Protection</strong> - Accelerate ocean conservation and sustainable fishery development through adequate funding</li>
+<li><strong>Transparent Mechanism Establishment</strong> - Build industry-standard transparent disclosure and fund tracking mechanisms</li>
+</ul>
+<p>I believe that combining blockchain technology with ocean conservation can create a more transparent, efficient, and trustworthy blue economy ecosystem. BlueLink is not just a fundraising platform—it’s a catalyst for driving global sustainable ocean development.</p>
+
+    </div>
+
+    <div class="article-footer">
+        
+            <div class="article-tags">
+                <strong>Tags:</strong>
+                <a class="tag-none-link" href="/tags/BlueBond/" rel="tag">BlueBond</a><a class="tag-none-link" href="/tags/DeFi/" rel="tag">DeFi</a><a class="tag-none-link" href="/tags/RWA/" rel="tag">RWA</a><a class="tag-none-link" href="/tags/Tokenization/" rel="tag">Tokenization</a>
+            </div>
+        
+
+        <div class="article-navigation">
+            
+                <div class="article-prev">
+                    <small>Previous Post</small>
+                    <h3><a href="/2025/12/10/Sui_bootcamp/">Sui Bootcamp Experience and After Thoughts</a></h3>
+                </div>
+            
+            
+                <div class="article-next">
+                    <small>Next Post</small>
+                    <h3><a href="/2025/08/17/Sui_workshop/">Sui Workshop Learn &amp; Thoughts</a></h3>
+                </div>
+            
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kai Xiu Huang</h3>
+                    <p>AI Developer and Blockchain Specialist focused on creating innovative solutions at the intersection of artificial intelligence and blockchain technology.</p>
+                    <div class="social-links">
+                        <a target="_blank" rel="noopener" href="https://github.com/BrianHuang813" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/kai-xiu-huang-768429253/" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a target="_blank" rel="noopener" href="https://discord.com/users/brianhuang813" title="Discord">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.084.084 0 0 0-.09.028c-.242.42-.512.995-.7 1.43-.213.04-4.092-.16-4.113-.16-.217.013-3.97.173-4.184.157-.188-.435-.457-1.01-.7-1.43a.084.084 0 0 0-.09-.028c-1.714.29-3.354.8-4.884 1.49-.015.004-.028.015-.037.027-3.155 4.507-4.027 8.9-3.594 13.25.002.015.01.028.02.038 1.506 1.142 2.962 1.84 4.395 2.29.022.006.046 0 .062-.017.346-.472.656-.973.92-1.495a.084.084 0 0 0-.046-.117 14.975 14.975 0 0 1-2.058-.942.084.084 0 0 1-.009-.14c.14-.104.28-.202.413-.31a.084.084 0 0 1 .085-.01c4.67 2.142 9.447 2.142 14.065 0a.084.084 0 0 1 .085.01c.134.108.273.206.413.31a.084.084 0 0 1-.009.14c-.656.383-1.33.71-2.059.942a.084.084 0 0 0-.045.118c.263.522.574 1.023.92 1.495a.084.084 0 0 0 .062.017c1.432-.45 2.89-1.148 4.395-2.29a.089.089 0 0 0 .02-.037c.515-5.043-.852-9.386-3.59-13.253a.07.07 0 0 0-.037-.028zM8.02 15.33c-.87 0-1.584-.8-1.584-1.782 0-.978.703-1.782 1.584-1.782.882 0 1.596.811 1.584 1.782 0 .982-.702 1.782-1.584 1.782zm5.96 0c-.87 0-1.584-.8-1.584-1.782 0-.978.703-1.782 1.584-1.782.882 0 1.596.811 1.584 1.782 0 .982-.7 1.782-1.584 1.782z"/>
+                            </svg>
+                        </a>
+                        <a target="_blank" rel="noopener" href="https://x.com/BrianHuang18" title="X">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a target="_blank" rel="noopener" href="https://t.me/@BrianHuangk" title="Telegram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                <path d="M9.993 16.2l-.426 4.02c.61 0 .872-.263 1.19-.577l2.857-2.715 5.926 4.33c1.085.6 1.86.285 2.14-.998l3.885-18.2c.345-1.6-.58-2.23-1.63-1.85L1.36 9.27c-1.56.6-1.54 1.46-.27 1.85l4.97 1.55 11.54-7.27c.54-.36 1.03-.16.63.23"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Other Links</h3>
+                    <ul>
+                        <li><a target="_blank" rel="noopener" href="https://app.ens.domains/kxhuang.eth">ENS Domain</a></li>
+                        <li><a target="_blank" rel="noopener" href="https://medium.com/@Sonny31">Medium Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Email: <a href="mailto:work@kxhuang.dev">work@kxhuang.dev</a></li>
+                        <li>Phone: <a href="tel:+886983278523">+886 983278523</a></li>
+                        <li>Location: <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Taipei%2C+Taiwan">Taipei, Taiwan</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Kai Xiu Huang. All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- Footer Marquee - Scrolling status ticker -->
+        <div class="footer-marquee">
+            <div class="marquee-content">
+                <span class="marquee-text">Status: Online | Location: Taipei | Drinking: Coffee | BTC: $95k | ETH: $3k | SUI: $4.2</span>
+                <span class="marquee-text">Status: Online | Location: Taipei | Drinking: Coffee | BTC: $95k | ETH: $3k | SUI: $4.2</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+        
+        // Scrolling for Navigation Links (instant for retro feel)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'auto'
+                    });
+                    
+                    // Close mobile navigation if open
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
